@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-board {
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+#game-board td {
+  border: gray solid 1px;
+  width: 16px;
+  height: 16px;
+}
+
+.snake {
+  font-size: 11px;
+}
+
+.food {
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+#game-over {
+  position: absolute;
+  background: white;
+  font-size:  2rem;
+  padding: 0.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
