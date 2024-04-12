@@ -22,6 +22,11 @@ class GameBoard {
                 cellTd.setAttribute('id', id);
 
                 if ( snakeCoordinates.includes(id) ){
+
+                    if ( id == snakeCoordinates[0])
+                    cellTd.innerText = '🤯'
+                    
+                    else
                     cellTd.innerText = '🟣'
                     cellTd.classList.add('snake');
                 }
@@ -33,7 +38,6 @@ class GameBoard {
                 }
 
                 rowTr.append(cellTd);
-                //console.log(id);
             }
     
             this.gameBoardTable.append(rowTr);

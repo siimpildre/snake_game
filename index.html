@@ -8,8 +8,16 @@
 </head>
 <body>
     <div id="container">
-        <table id="game-board">
-
+        <div class="score-container">
+            <div>
+                <span>Rekord:</span> <span id="high-score"></span>
+            </div>
+            <div>
+                <span>Skoor:</span> <span id="score"></span>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">Game over!</div>
+        <table id="game-board"></table>
         </table>
     </div>
     <script type="module" src="app.js"></script>

@@ -81,7 +81,6 @@ class Snake {
     pop () {
         this.coordinates.pop();
     }
-
 }
 
 export { Snake }
